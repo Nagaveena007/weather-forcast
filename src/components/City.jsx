@@ -16,11 +16,10 @@ const City = () => {
   }, []);
   return (
     <>
-      {" "}
       <InputGroup
         size="sm"
-        className=""
-        style={{ width: "30rem", borderRadius: "2rem" }}
+        className="mt-5"
+        style={{ width: "32rem", borderRadius: "2rem" }}
       >
         <FormControl
           aria-label="Small"
@@ -41,12 +40,13 @@ const City = () => {
         </InputGroup.Prepend>
       </InputGroup>
       <Card
-        className="bg-dark ml-5 text-white mt-2 d-flex justify-content-center align-items-center"
+        className="bg-dark ml-5 text-white mt-4 d-flex justify-content-center align-items-center"
         style={{ width: "30rem", borderRadius: "2rem" }}
       >
         <Card.Img
           src="https://cdn.pixabay.com/photo/2012/02/16/12/31/storm-13679_960_720.jpg"
-          style={{ borderRadius: "2rem" }}
+          /*             src="https://image.shutterstock.com/image-photo/beautiful-blue-sky-clouds-sun-260nw-1209009610.jpg"
+           */ style={{ borderRadius: "2rem" }}
         />
         <Card.ImgOverlay>
           <Card.Body>
@@ -67,19 +67,17 @@ const City = () => {
                 </Card.Title>
 
                 <Card.Text>
-                  <p
-                    className="my-1"
-                    style={{ backgroundColor: "transparent" }}
-                  >
-                    <Image
-                      src="https://image.pngaaa.com/943/2745943-middle.png"
+                  <p className="my-1">
+                    {/*  <Image
+                      src="https://cdn-icons-png.flaticon.com/512/172/172922.png"
                       height="17px"
-                    />
-                    <span> {weather.wind?.speed} km/h </span>
+                      style={{ backgroundColor: "transparent", color: "black" }}
+                    /> */}
+                    <span>Wind-speed :{weather.wind?.speed} km/h </span>
                   </p>
                   <p className="my-1">
-                    <i className="fa fa-tint mr-2" aria-hidden="true" />
-                    <span>Humidity {weather.main?.humidity}% </span>
+                    <span>Humidity :{weather.main?.humidity}% </span>
+                    <span>{weather.weather?.main}</span>
                   </p>
                 </Card.Text>
               </>

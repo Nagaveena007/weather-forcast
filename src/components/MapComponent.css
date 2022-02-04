@@ -1,0 +1,48 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+label,
+h3 {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.25rem;
+  box-sizing: border-box;
+  font-size: larger;
+}
+
+.toggle-button {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 100;
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.navbar {
+  background-color: #1f2835 !important;
+}
+  .nav-item {
+    color: white !important;
+  }
+
+  .logout-button {
+    color: #eb5353 !important;
+  }
+
+
+.count-contributions {
+  color: white;
+}

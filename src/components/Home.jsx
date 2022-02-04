@@ -1,24 +1,20 @@
 import City from "./City";
-import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { InititalStates } from "../redux/store";
-import MapComponent from "../components/MapComponent";
-import { cityReducer } from "../redux/reducers/cityReducer";
 import { Container, Row, Col } from "react-bootstrap";
 const Home = () => {
-  const cityWeather = useSelector((state) => state.city.data);
-
-  useEffect(() => {}, [cityWeather.data]);
   return (
     <>
       <Container className="mt-5 ">
         <Row>
-          <Col md={6} className=" ">
+          <Col md={6}>
             <City />
           </Col>
           <Col md={6} className="mt-5 pt-2">
-            <MapComponent />
-            <img src="" alt="" />
+            <img
+              style={{ width: "32rem", height: "22rem" }}
+              src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg"
+              alt=""
+              className="mb-3"
+            />
           </Col>
         </Row>
       </Container>
@@ -27,3 +23,4 @@ const Home = () => {
 };
 
 export default Home;
+/*API-KEY:===> AIzaSyDwlDHAEflfXFrObPhJlhTJAiH9JGQS5T8 */
